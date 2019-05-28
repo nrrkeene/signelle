@@ -14,7 +14,7 @@ Build:
 mvn clean install
 
 Run:
-
+mvn exec:java -Dexec.mainClass="be.keene.signelle.Signelle"
 
 ----
 
