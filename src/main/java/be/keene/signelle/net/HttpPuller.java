@@ -86,6 +86,8 @@ public class HttpPuller implements Runnable {
                 logger.error("Processor fatal exception", t);
                 this.shouldStop = true;
             }
+            
+            if(logger.isInfoEnabled()) logger.info("Exiting Signelle");
         }
     
         /**

@@ -16,12 +16,8 @@ public class Signelle {
     
     public static void main(String[] args) throws Exception {
         if(logger.isInfoEnabled()) logger.info("Welcome to Signelle");
-    
         SignelleModel model = new SignelleModel();
         HttpPuller httpPuller = new HttpPuller(host, port, model);
-        
         new Thread(httpPuller).start();
-    
-        if(logger.isInfoEnabled()) logger.info("Exiting Signelle normally");
     }
 }
